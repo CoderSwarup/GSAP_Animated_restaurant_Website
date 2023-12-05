@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Chaney;
+  src: url(/Fonts/chaney-ultraextended.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Loader */
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(250, 195, 8);
+  animation: pulse 3s;
+}
+
+.zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  font-family: Chaney;
+  font-size: 10vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.07vw;
+  -webkit-text-stroke-color: #fff;
+  font-weight: 200;
+  opacity: 0.7;
+  outline: none;
+}
+
+.scramble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  font-family: Chaney;
+  font-size: 5vw;
+  color: #fff;
+  font-weight: 200;
+  padding: 2vw;
+}
+
+.Loading {
+  position: relative;
+  left: 50%;
+  bottom: -60%;
+  display: inline-block;
+  transform: translate(-50%, 0%) rotate(-8deg);
+  width: 50%;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.Loading:after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 4px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, .2); */
+  animation: load 3s;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+    background: #a28089;
+  }
+
+  25% {
+    width: 25%;
+    background: #a0d2eb;
+  }
+
+  50% {
+    width: 50%;
+    background: #d0bdf4;
+
+    /* background: #ffa8b6; */
+  }
+
+  75% {
+    width: 75%;
+    background: #d2d2d2;
+    /* background: rgb(250, 195, 8); */
+  }
+
+  100% {
+    width: 100%;
+    /* background: #d0bdf4; */
+    /* background: #ffa8b6; */
+
+    background: rgb(250, 195, 8);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: #a28089;
+  }
+
+  25% {
+    background: #a0d2eb;
+  }
+
+  50% {
+    background: #d0bdf4;
+    /* background: #ffa8b6; */
+  }
+
+  75% {
+    /* background: #c2c2c2; */
+    /* background: #d0bdf4; */
+    background: #d2d2d2;
+    /* background: rgb(250, 195, 8); */
+  }
+
+  100% {
+    /* background: #ffa8b6; */
+    /* background: #c2c2c2; */
+    background: rgb(250, 195, 8);
+  }
+}
