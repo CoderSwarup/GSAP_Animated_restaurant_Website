@@ -28,8 +28,9 @@ Embark on a journey through the realms of web development artistry. Witness the 
 
 ## 📷 Screenshots:
 
-![Section 1](webIamges/1_Section_1.png)
+![Section 1](https://res.cloudinary.com/dc4li3m0r/image/upload/v1703437844/samples/WebImg/wofolbpqbxlwn1ihmshi.png)
 
-![Section 2](webIamges/2_Section_2.png)
+![Section 2](https://res.cloudinary.com/dc4li3m0r/image/upload/v1703437846/samples/WebImg/ufg2fh4ztjxmumspj9zb.png)
 
-![Section 3](webIamges/3_section_3.png)
+<img src="https://res.cloudinary.com/dc4li3m0r/image/upload/v1703437866/samples/WebImg/kqttuig0crwu9fca4kd0.png" width="90%">
+
